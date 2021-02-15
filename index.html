@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<style>
+    main {
+        position: relative;
+        top: 150px;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 136px 136px 136px 136px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            ". logo logo ."
+            "search search search search"
+            ". button1 button2 .";
+        
+    }
+    .googleLogo {
+        grid-area: logo;
+    }
+    .searchBar {
+        grid-area: search;
+        justify-self: center;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        width: 585px;     
+    }
+    .searchBar input {
+        width: 585px;
+        height: 30px;
+        border-radius: 24px;
+        border-color:gray;
+        border-width: 2px 2px;
+    }
+    .button1 {
+        grid-area: button1;
+        justify-self: left;
+    }
+    .button1:hover {
+        box-shadow:slategray
+    }
+    .button2 {
+        grid-area: button2;
+        justify-self: right;
+    }
+</style>
+<head>
+    <title>Google</title>
+</head>
+<body>
+    <main>.
+        <div class="googleLogo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        <div class="searchBar">
+            <input type="text" width="544">
+        </div>
+        <div class="button1">
+            <button>Google Search</button>
+        </div>
+        <div class="button2">
+            <button>I'm feeling lucky</button>
+        </div>
+    </main>
+</body>
